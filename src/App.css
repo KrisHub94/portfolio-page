@@ -1,5 +1,17 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+#main-wrapper {
+  padding-top: 50px;
+}
+
+.sub-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.text-wrapper {
+  max-width: 30%;
 }

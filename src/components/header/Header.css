@@ -1,0 +1,13 @@
+#header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
