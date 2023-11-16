@@ -1,4 +1,5 @@
 import "./Header.css";
+import NavbarLink from "./NavbarLink";
 
 const Header = () => {
     return (
@@ -12,6 +13,7 @@ const Header = () => {
                     <div className="sub-wrapper">
                         <a href="#project-display">Projects</a>
                         <a href="#contact-info">Contact</a>
+                        <NavbarLink name={"Projects"} target={"project-display"} />
                     </div>
                 </nav>
             </div>
