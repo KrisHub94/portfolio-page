@@ -6,12 +6,12 @@ const Header = () => {
             <div className="main-wrapper">
                 <nav className="nav-main">
                     <div className="sub-wrapper">
-                        <a>Kristian Huber</a>
+                        <a href="#introduction">Kristian Huber</a>
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
                     <div className="sub-wrapper">
-                        <a>Projects</a>
-                        <a>Contact</a>
+                        <a href="#project-display">Projects</a>
+                        <a href="#contact-info">Contact</a>
                     </div>
                 </nav>
             </div>
