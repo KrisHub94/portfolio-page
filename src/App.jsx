@@ -1,9 +1,18 @@
 import './App.css'
+import ContactInfo from './components/contact-info/ContactInfo'
+import Footer from './components/footer/Footer'
+import IntroductionSegment from './components/introduction_segment/IntroductionSegment'
+import Navbar from './components/navbar/Navbar'
+import ProjectDisplay from './components/project_display/ProjectDisplay'
 
 function App() {
   return (
     <>
-      <p>Soon there will be a webpage for the greatest programmer and progamer of all time in this spot.</p>
+      <Navbar />
+      <IntroductionSegment />
+      <ProjectDisplay />
+      <ContactInfo />
+      <Footer />
     </>
   )
 }
