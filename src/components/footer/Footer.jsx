@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div id="footer">
+        <section id="footer">
             <p>This is where the Footer should be.</p>
-        </div>
+        </section>
     )
 }
 export default Footer;

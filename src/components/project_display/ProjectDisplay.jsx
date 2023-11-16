@@ -1,8 +1,8 @@
 const ProjectDisplay = () => {
     return (
-        <div id="project-display">
+        <section id="project-display">
             <p>This is where the Project Display should be.</p>
-        </div>
+        </section>
     )
 }
 export default ProjectDisplay;

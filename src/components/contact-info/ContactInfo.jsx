@@ -1,8 +1,8 @@
 const ContactInfo = () => {
     return (
-        <div id="contact-info">
+        <section id="contact-info">
             <p>This is where the Contact Info should be.</p>
-        </div>
+        </section>
     )
 }
 export default ContactInfo;
