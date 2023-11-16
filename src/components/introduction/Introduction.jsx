@@ -7,7 +7,7 @@ const Introduction = () => {
                 <h1>KRISTIAN HUBER</h1>
                 <h2>The man with the magic fingers</h2>
             </div>
-            <div>
+            <div className="text-wrapper">
                 <p>
                     Hello! My name is Kristian Huber, but my friends call me Kris. I am possibly the best Full Stack Software Developer
                     that the world has ever seen. I recently finished my training at Codecool Austria and am now proficient in a number of technologies
