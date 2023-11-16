@@ -3,3 +3,8 @@
   padding: 2rem;
   text-align: center;
 }
+
+.sub-wrapper {
+  display: flex;
+  gap: 1em;
+}
