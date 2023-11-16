@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Header />
-      <Introduction />
-      <ProjectDisplay />
-      <ContactInfo />
-      <Footer />
+      <main id='main-wrapper'>
+        <Introduction />
+        <ProjectDisplay />
+        <ContactInfo />
+        <Footer />
+      </main>
     </>
   )
 }
