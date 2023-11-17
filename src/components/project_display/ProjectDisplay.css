@@ -1,5 +1,12 @@
+#display-container {
+    flex-grow: 1;
+    border: 1px solid cyan;
+}
+
 .arrow-left,
 .arrow-right {
     display: block;
     border-right: 2px solid white;
+    height: 30%;
+    width: 20%;
 }
