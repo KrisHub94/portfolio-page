@@ -11,6 +11,15 @@
     height: 15rem;
     width: 15rem;
     margin: auto;
+    
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    box-shadow: 15px 5px 15px -15px white,
+    5px 15px 15px -15px white,
+    -15px -5px 15px -15px white inset,
+    -5px -15px 15px -15px white inset;
 }
 
 .arrow-left {
