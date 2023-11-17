@@ -4,10 +4,11 @@
     height: 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
 }
 
 .nav-main {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: .85rem;
 }

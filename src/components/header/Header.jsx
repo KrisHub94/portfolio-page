@@ -4,7 +4,7 @@ import NavbarLink from "./NavbarLink";
 const Header = () => {
     return (
         <header id="header">
-            <div className="main-wrapper">
+            <div>
                 <nav className="nav-main">
                     <div className="sub-wrapper">
                         <NavbarLink text={"Kristian Huber"} target={"introduction"} />

@@ -1,0 +1,49 @@
+#display-container {
+    flex-grow: 1;
+    border: 1px solid cyan;
+    z-index: 1;
+}
+
+#display-names-container {
+    border-bottom: 1px solid white;
+    height: 10%;
+    width: 100%;
+}
+
+#displayed-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: auto 1rem;
+}
+
+.arrow-left,
+.arrow-right {
+    display: block;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    box-shadow: 15px 5px 15px -15px white,
+    5px 15px 15px -15px white,
+    -15px -5px 15px -15px white inset,
+    -5px -15px 15px -15px white inset;
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    margin-right: -7rem;
+    margin-left: 4.5rem;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    margin-left: -7rem;
+    margin-right: 4.5rem;
+}
