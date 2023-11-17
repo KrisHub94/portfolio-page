@@ -4,6 +4,20 @@
     z-index: 1;
 }
 
+#display-names-container {
+    border-bottom: 1px solid white;
+    height: 10%;
+    width: 100%;
+}
+
+#displayed-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: auto 1rem;
+}
+
 .arrow-left,
 .arrow-right {
     display: block;
