@@ -7,6 +7,20 @@
 .arrow-right {
     display: block;
     border-right: 2px solid white;
-    height: 30%;
-    width: 20%;
+    border-bottom: 2px solid white;
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    margin-right: -7rem;
+    margin-left: 4.5rem;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    margin-left: -7rem;
+    margin-right: 4.5rem;
 }
