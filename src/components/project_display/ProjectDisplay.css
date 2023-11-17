@@ -1,0 +1,5 @@
+.arrow-left,
+.arrow-right {
+    display: block;
+    border-right: 2px solid white;
+}
