@@ -9,5 +9,5 @@
 .nav-main {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: .85rem;
 }
