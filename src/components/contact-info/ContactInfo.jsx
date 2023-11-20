@@ -6,6 +6,7 @@ const ContactInfo = () => {
                 want to give feedback regarding this page, even if you just want to talk about
                 video games please contact me!
             </p>
+            <i className="ci ci-spotify ci-2x"></i>
         </section>
     )
 }
