@@ -4,18 +4,24 @@ import NavbarLink from "./NavbarLink";
 const Header = () => {
     return (
         <header id="header">
-            <div>
-                <nav className="nav-main">
+            <nav className="nav-main">
+                <div className="container">
                     <div className="sub-wrapper">
                         <NavbarLink text={"Kristian Huber"} target={"introduction"} />
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
-                    <div className="sub-wrapper">
-                        <NavbarLink text={"Projects"} target={"project-display"} />
-                        <NavbarLink text={"Contact"} target={"contact-info"} />
+                    <div className="nav-elements">
+                        <ul>
+                            <li>
+                                <NavbarLink text={"Projects"} target={"project-display"} />
+                            </li>
+                            <li>
+                                <NavbarLink text={"Contact"} target={"contact-info"} />
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
     )
 }

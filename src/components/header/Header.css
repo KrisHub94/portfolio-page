@@ -1,14 +1,24 @@
 #header {
     position: fixed;
     top: 0;
-    height: 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, .4);
     z-index: 2;
 }
 
 .nav-main {
+}
+
+.container {
     display: flex;
     justify-content: space-between;
-    margin: .85rem;
+    margin: 0 .85rem;
+    height: 50px;
+    align-items: center;
+}
+.nav-elements ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: space-between;
 }
