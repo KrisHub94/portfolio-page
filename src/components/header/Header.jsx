@@ -10,6 +10,7 @@ const Header = () => {
                         <NavbarLink text={"Kristian Huber"} target={"introduction"} />
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
+                    <div className="menu-icon"></div>
                     <div className="nav-elements">
                         <ul>
                             <li>
