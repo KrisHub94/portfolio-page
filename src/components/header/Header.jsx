@@ -1,4 +1,5 @@
 import "./Header.css";
+import MenuIcon from "./MenuIcon";
 import NavbarLink from "./NavbarLink";
 
 const Header = () => {
@@ -10,7 +11,9 @@ const Header = () => {
                         <NavbarLink text={"Kristian Huber"} target={"introduction"} />
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
-                    <div className="menu-icon"></div>
+                    <div className="menu-icon">
+                        <MenuIcon />
+                    </div>
                     <div className="nav-elements">
                         <ul>
                             <li>
