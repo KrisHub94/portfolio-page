@@ -1,14 +1,58 @@
 #header {
     position: fixed;
     top: 0;
-    height: 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, .4);
     z-index: 2;
 }
 
-.nav-main {
+.container {
     display: flex;
     justify-content: space-between;
-    margin: .85rem;
+    margin: 0 .85rem;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-elements ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navlink {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-elements {
+        width: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: rgba(0, 0, 0, .4);
+}
+
+    .nav-elements.visible {
+        width: 150px;
+    }
+
+    .nav-elements ul {
+        flex-direction: column;
+    }
+    
+    .nav-elements ul li {
+        margin-right: unset;
+    }
 }
