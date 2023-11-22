@@ -38,5 +38,21 @@
     .nav-elements {
         width: 0;
         overflow: hidden;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: rgba(0, 0, 0, .4);
+}
+
+    .nav-elements.visible {
+        width: 150px;
+    }
+
+    .nav-elements ul {
+        flex-direction: column;
+    }
+    
+    .nav-elements ul li {
+        margin-right: unset;
     }
 }
