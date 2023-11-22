@@ -1,8 +1,14 @@
+import { useState } from "react";
 import "./Header.css";
 import MenuIcon from "./MenuIcon";
 import NavbarLink from "./NavbarLink";
 
 const Header = () => {
+    const [showNavBar, setShowNavbar] = useState(false);
+    const toggleShowNavbar = () => {
+        setShowNavbar(!showNavBar);
+    }
+
     return (
         <header id="header">
             <nav className="nav-main">
@@ -11,10 +17,10 @@ const Header = () => {
                         <NavbarLink text={"Kristian Huber"} target={"introduction"} />
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
-                    <div className="menu-icon">
+                    <div className="menu-icon" onClick={() => toggleShowNavbar()}>
                         <MenuIcon />
                     </div>
-                    <div className="nav-elements">
+                    <div className={`nav-elements ${showNavBar?'visible':'hidden'}`}>
                         <ul>
                             <li>
                                 <NavbarLink text={"Projects"} target={"project-display"} />
