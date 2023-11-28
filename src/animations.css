@@ -8,9 +8,23 @@
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
 .anim-slide-in-left {
     animation: slide-in-left 0.8s ease-out forwards;
     visibility: hidden;
+}
+
+.anim-fade-in {
+    animation: fade-in 0.5s forwards;
+    opacity: 0;
 }
 
 .anim-delay-short {
