@@ -1,8 +1,13 @@
 #display-container {
     flex-grow: 1;
-    border: 1px solid cyan;
     z-index: 1;
 }
+
+.section-container {
+    display: flex;
+    gap: 2rem;
+    height: 50rem;
+  }
 
 #display-names-container {
     border-bottom: 1px solid white;
@@ -46,4 +51,27 @@
     transform: rotate(-45deg);
     margin-left: -7rem;
     margin-right: 4.5rem;
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 100%;
+    }
+
+    #display-container {
+        height: fit-content;
+    }
+
+    #displayed-project {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+    .section-container {
+        height: max-content;
+    }
 }

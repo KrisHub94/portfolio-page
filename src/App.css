@@ -11,14 +11,3 @@
   display: flex;
   gap: 1rem;
 }
-
-.text-wrapper {
-  max-width: 30%;
-}
-
-.section-container {
-  display: flex;
-  gap: 2rem;
-  border: 1px solid red;
-  height: 50rem;
-}
