@@ -59,13 +59,21 @@
     img {
         max-width: 100%;
     }
-    #project-display {
+
+    #display-container {
+        height: fit-content;
     }
+
     #displayed-project {
         flex-direction: column;
         margin: 0;
     }
+
     .arrow-left, .arrow-right {
         display: none;
+    }
+
+    .section-container {
+        height: max-content;
     }
 }
