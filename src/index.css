@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
 }
 
+h1, h2 {
+  font-family: 'League Spartan';
+}
+
 h1 {
   font-size: 100px;
 }

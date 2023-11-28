@@ -4,7 +4,7 @@ const Introduction = () => {
     return (
         <section id="introduction">
             <div>
-                <h1>KRISTIAN HUBER</h1>
+                <h1 className="anim-slide-in-left">KRISTIAN HUBER</h1>
                 <h2>The man with the magic fingers</h2>
             </div>
             <div className="text-wrapper">
