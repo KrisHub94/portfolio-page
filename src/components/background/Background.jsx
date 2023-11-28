@@ -1,17 +1,12 @@
 import "./Background.css";
+import BackgroundCircle from "./BackgroundCircle";
 
 const Background = () => {
     return(
         <div id="background-main">
-            <svg className="circle1" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50%" cy="50%" r="80" fill="none" stroke="black" strokeWidth="20" strokeDasharray="2"></circle>
-            </svg>
-            <svg className="circle2" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50%" cy="50%" r="110" fill="none" stroke="black" strokeWidth="20" strokeDasharray="2"></circle>
-            </svg>
-            <svg className="circle3" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50%" cy="50%" r="140" fill="none" stroke="black" strokeWidth="20" strokeDasharray="2"></circle>
-            </svg>
+            <BackgroundCircle number={1} radius={80} />
+            <BackgroundCircle number={2} radius={110} />
+            <BackgroundCircle number={3} radius={140} />
         </div>
     )
 }
