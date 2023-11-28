@@ -5,7 +5,7 @@ const Introduction = () => {
         <section id="introduction">
             <div>
                 <h1 className="anim-slide-in-left">KRISTIAN HUBER</h1>
-                <h2 className="anim-slide-in-left anim-delay-short">The man with the magic fingers</h2>
+                <h2 className="anim-slide-in-left anim-delay-short">Full Stack Software Developer</h2>
             </div>
             <div className="text-wrapper">
                 <p className="anim-fade-in">
