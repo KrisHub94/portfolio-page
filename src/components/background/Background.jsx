@@ -3,7 +3,9 @@ import "./Background.css";
 const Background = () => {
     return(
         <div id="background-main">
-
+            <svg className="circle1" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50%" cy="50%" r="80" fill="none" stroke="black" strokeWidth="20" strokeDasharray="2"></circle>
+            </svg>
         </div>
     )
 }
