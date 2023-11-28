@@ -4,9 +4,15 @@
     }
     100% {
         transform: translateX(0%);
+        visibility: visible;
     }
 }
 
 .anim-slide-in-left {
-    animation: slide-in-left 3s ease-out;
+    animation: slide-in-left 0.8s ease-out forwards;
+    visibility: hidden;
+}
+
+.anim-delay-short {
+    animation-delay: 0.2s;
 }
