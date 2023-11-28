@@ -54,3 +54,18 @@
     margin-left: -7rem;
     margin-right: 4.5rem;
 }
+
+@media (max-width: 600px) {
+    img {
+        max-width: 100%;
+    }
+    #project-display {
+    }
+    #displayed-project {
+        flex-direction: column;
+        margin: 0;
+    }
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+}
