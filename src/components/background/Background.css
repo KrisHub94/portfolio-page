@@ -24,11 +24,12 @@
     background-color: gray;
 }
 
-svg {
+#background-main svg {
     width: 100%;
     height: 100%;
     position: fixed;
     left: 0;
+    opacity: .5;
 }
 
 circle {

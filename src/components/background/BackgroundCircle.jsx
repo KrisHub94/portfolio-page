@@ -6,7 +6,7 @@ const BackgroundCircle = ({number, radius}) => {
 
     return(
             <svg xmlns="http://www.w3.org/2000/svg">
-                <circle className={className}  cx={"50%"} cy={"50%"} r={radius} fill="none" stroke="black" strokeWidth="20" strokeDasharray="2"></circle>
+                <circle className={className}  cx={"50%"} cy={"50%"} r={radius} fill="none" stroke="black" strokeWidth="30" strokeDasharray="3"></circle>
             </svg>
     )
 }
