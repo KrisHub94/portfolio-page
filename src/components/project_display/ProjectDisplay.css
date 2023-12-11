@@ -7,7 +7,7 @@
     display: flex;
     gap: 2rem;
     height: 40rem;
-  }
+}
 
 #display-names-container {
     border-bottom: 1px solid white;

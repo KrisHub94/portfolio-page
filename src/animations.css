@@ -27,6 +27,10 @@
     opacity: 0;
 }
 
+.anim-fade-in-finished {
+    opacity: 1;
+}
+
 .anim-delay-short {
     animation-delay: 0.2s;
 }

@@ -1,6 +1,8 @@
 import "./ProjectDisplay.css";
 import PROJECTS from "./ProjectData";
 import { useState } from "react";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+
 
 const ProjectDisplay = () => {
     const [displayedIndex, setDisplayedIndex] = useState(0);
@@ -10,8 +12,24 @@ const ProjectDisplay = () => {
     const selectPrevious = () => {
         displayedIndex === 0? setDisplayedIndex(PROJECTS.length - 1): setDisplayedIndex(displayedIndex - 1);
     }
+
+    const [animationPlayed, setAnimationPlayed] = useState(false);
+    const [elementRef, isVisible] = useIntersectionObserver({
+        threshold: 0,
+    });
+
+    const handleAnimation = () => {
+        if (isVisible && !animationPlayed) {
+            setAnimationPlayed(true);
+        }
+    };
     return (
-        <section id="project-display">
+        <section 
+            id="project-display"
+            ref={elementRef}
+            className={`${isVisible && !animationPlayed ? 'anim-fade-in anim-delay-short' : 'anim-fade-in-finished'}`}
+            onAnimationEnd={handleAnimation}
+            >
             <h2>HERE ARE SOME OF MY PROJECTS</h2>
             <div className="section-container">
                 <div className="arrow-left" onClick={() => selectPrevious()}></div>
