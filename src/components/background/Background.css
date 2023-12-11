@@ -31,6 +31,10 @@ svg {
     left: 0;
 }
 
+circle {
+    transform-origin: 50% 50%;
+}
+
 .circle1 {
     animation: spin-clockwise 10s linear;
     animation-iteration-count: infinite;

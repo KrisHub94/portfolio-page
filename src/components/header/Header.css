@@ -33,6 +33,15 @@
     .menu-icon {
         display: block;
         cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .menu-icon svg {
+        display: block;
+        width: 32px;
+        height: 32px;
+        left: auto;
     }
 
     .nav-elements {
