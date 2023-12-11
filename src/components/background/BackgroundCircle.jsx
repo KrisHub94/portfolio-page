@@ -1,8 +1,5 @@
-import { useState } from "react";
-
 const BackgroundCircle = ({number, radius}) => {
-    const className = "circle" + number;
-    
+    const className = "circle" + number; 
 
     return(
             <svg xmlns="http://www.w3.org/2000/svg">

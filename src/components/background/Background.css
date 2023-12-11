@@ -21,7 +21,7 @@
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background: radial-gradient(circle, rgb(138, 137, 137), rgb(83, 83, 83));
 }
 
 #background-main svg {
