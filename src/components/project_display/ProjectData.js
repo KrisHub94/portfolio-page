@@ -3,9 +3,9 @@ import ICONS from "../../constants/icons";
 const PROJECTS = [
     {
         id: 0,
-        name: "Project 1",
-        imgSrc: "https://placehold.co/600x400",
-        description: "This is Project 1. It is named like that because it is the first project that i want to display.",
+        name: "Struggle",
+        imgSrc: "/src/images/struggle.png",
+        description: "The final and largest team project i participated in at the end of my training. It is a webpage where you can sign up and play a platformer game.",
         techIcons: [ICONS.HTML, ICONS.CSS, ICONS.JAVASCRIPT, ICONS.REACTJS, ICONS.SPRING, ICONS.NODEJS, ICONS.POSTGRESQL],
     },
     {

@@ -23,7 +23,7 @@
 #displayed-project {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin: 1rem;
 }
 
@@ -60,6 +60,10 @@
 .selected {
     background-color: gray;
     box-shadow: 0 0 40px 15px white;
+}
+
+img {
+    max-width: 600px;
 }
 
 @media (max-width: 600px) {
