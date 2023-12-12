@@ -38,7 +38,7 @@ const ProjectDisplay = () => {
                         {
                             PROJECTS.map(project => {
                                 return <button 
-                                className={project.id === 0?"project-button selected":"project-button"}
+                                className={project.id === displayedIndex?"project-button selected":"project-button"}
                                 key={project.id} 
                                 onClick={() => {
                                     setDisplayedIndex(project.id);

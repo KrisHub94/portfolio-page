@@ -52,6 +52,11 @@
     margin-right: 4.5rem;
 }
 
+.selected {
+    background-color: gray;
+    box-shadow: 0 0 40px 15px white;
+}
+
 @media (max-width: 600px) {
     img {
         max-width: 100%;
