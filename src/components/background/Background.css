@@ -1,0 +1,52 @@
+@keyframes spin-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-counter-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#background-main {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(138, 137, 137), rgb(83, 83, 83));
+}
+
+#background-main svg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    opacity: .5;
+}
+
+circle {
+    transform-origin: 50% 50%;
+}
+
+.circle1 {
+    animation: spin-clockwise 10s linear;
+    animation-iteration-count: infinite;
+}
+
+.circle2 {
+    animation: spin-counter-clockwise 12s linear;
+    animation-iteration-count: infinite;
+}
+
+.circle3 {
+    animation: spin-clockwise 15s linear;
+    animation-iteration-count: infinite;
+}

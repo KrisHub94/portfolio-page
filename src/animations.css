@@ -1,0 +1,36 @@
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+        visibility: visible;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.anim-slide-in-left {
+    animation: slide-in-left 0.8s ease-out forwards;
+    visibility: hidden;
+}
+
+.anim-fade-in {
+    animation: fade-in 0.8s forwards;
+    opacity: 0;
+}
+
+.anim-fade-in-finished {
+    opacity: 1;
+}
+
+.anim-delay-short {
+    animation-delay: 0.2s;
+}
