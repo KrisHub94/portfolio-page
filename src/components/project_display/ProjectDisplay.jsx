@@ -2,6 +2,8 @@ import "./ProjectDisplay.css";
 import PROJECTS from "./ProjectData";
 import { useState } from "react";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import ClickableIcon from "../clickable_icon/ClickableIcon";
+import ICONS from "../../constants/icons";
 
 
 const ProjectDisplay = () => {
@@ -59,6 +61,10 @@ const ProjectDisplay = () => {
                                 {PROJECTS[displayedIndex].techIcons.map((icon) => {
                                     return <i className={"ci " + icon.ICON_CLASSNAME + " ci-md"} key={icon.ICON_CLASSNAME}></i>
                                 })}
+                            </div>
+                            <div id="github-link">
+                                <span>GitHub Link: </span>
+                                <ClickableIcon link={PROJECTS[displayedIndex].gitHubLink} iconClassName={ICONS.GITHUB_LIGHT.ICON_CLASSNAME} />
                             </div>
                         </div>
                     </div>
