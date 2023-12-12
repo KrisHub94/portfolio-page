@@ -3,6 +3,11 @@
     z-index: 1;
 }
 
+#project-display {
+    background: radial-gradient(circle, rgba(0,0,0,0.5), rgba(83, 83, 83, 0.5));
+    box-shadow: 0 0 50px 15px rgb(83, 83, 83);
+}
+
 .section-container {
     display: flex;
     gap: 2rem;
