@@ -1,6 +1,6 @@
 import "./ProjectDisplay.css";
 import PROJECTS from "./ProjectData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import ClickableIcon from "../clickable_icon/ClickableIcon";
 import ICONS from "../../constants/icons";
@@ -8,6 +8,7 @@ import ICONS from "../../constants/icons";
 
 const ProjectDisplay = () => {
     const [displayedIndex, setDisplayedIndex] = useState(0);
+
     const selectNext = () => {
         displayedIndex === PROJECTS.length - 1? setDisplayedIndex(0): setDisplayedIndex(displayedIndex + 1);
     }
@@ -25,6 +26,7 @@ const ProjectDisplay = () => {
             setAnimationPlayed(true);
         }
     };
+
     return (
         <section 
             id="project-display"
@@ -51,18 +53,18 @@ const ProjectDisplay = () => {
                             })
                         }
                     </div>
-                    <div id="displayed-project">
-                        <img src={PROJECTS[displayedIndex].imgSrc} alt="a picture of my project"></img>
+                    <div id="displayed-project" key={PROJECTS[displayedIndex].id}>
+                        <img className="anim-fade-in" src={PROJECTS[displayedIndex].imgSrc} alt="a picture of my project"></img>
                         <div>
-                            <h3>{PROJECTS[displayedIndex].name}</h3>
-                            <p>{PROJECTS[displayedIndex].description}</p>
-                            <div className="techstack-icons">
+                            <h3 className="anim-fade-in">{PROJECTS[displayedIndex].name}</h3>
+                            <p className="anim-fade-in anim-delay-short">{PROJECTS[displayedIndex].description}</p>
+                            <div className="techstack-icons anim-fade-in anim-delay-medium">
                                 <span>The following technologies were used in this project:</span>
                                 {PROJECTS[displayedIndex].techIcons.map((icon) => {
                                     return <i className={"ci " + icon.ICON_CLASSNAME + " ci-md"} key={icon.ICON_CLASSNAME}></i>
                                 })}
                             </div>
-                            <div id="github-link">
+                            <div id="github-link" className="anim-fade-in anim-delay-medium">
                                 <span>GitHub Link: </span>
                                 <ClickableIcon link={PROJECTS[displayedIndex].gitHubLink} iconClassName={ICONS.GITHUB_LIGHT.ICON_CLASSNAME} />
                             </div>
