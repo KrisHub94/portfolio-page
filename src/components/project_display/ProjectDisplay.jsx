@@ -54,6 +54,12 @@ const ProjectDisplay = () => {
                         <div>
                             <h3>{PROJECTS[displayedIndex].name}</h3>
                             <p>{PROJECTS[displayedIndex].description}</p>
+                            <div className="techstack-icons">
+                                <span>The following technologies were used in this project:</span>
+                                {PROJECTS[displayedIndex].techIcons.map((icon) => {
+                                    return <i className={"ci " + icon.ICON_CLASSNAME + " ci-md"} key={icon.ICON_CLASSNAME}></i>
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
