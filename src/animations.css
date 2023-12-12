@@ -34,3 +34,7 @@
 .anim-delay-short {
     animation-delay: 0.2s;
 }
+
+.anim-delay-medium {
+    animation-delay: 0.4s;
+}
