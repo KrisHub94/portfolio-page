@@ -43,10 +43,3 @@ p {
     font-size: 50px;
   }
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-}
