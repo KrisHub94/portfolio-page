@@ -11,3 +11,7 @@
   display: flex;
   gap: 1rem;
 }
+
+#footer {
+  margin-bottom: 1rem;
+}
