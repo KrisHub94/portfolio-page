@@ -6,7 +6,7 @@ const PROJECTS = [
         name: "Struggle",
         imgSrc: "/src/images/struggle.png",
         description: "The final and largest team project i participated in at the end of my training. It is a webpage where you can sign up and play a platformer game.",
-        techIcons: [ICONS.HTML, ICONS.CSS, ICONS.JAVASCRIPT, ICONS.REACTJS, ICONS.SPRING, ICONS.NODEJS, ICONS.POSTGRESQL],
+        techIcons: [ICONS.HTML, ICONS.CSS, ICONS.JAVASCRIPT, ICONS.REACTJS, ICONS.JAVA, ICONS.SPRING, ICONS.NODEJS, ICONS.POSTGRESQL],
         gitHubLink: "https://github.com/egelix/Autumn",
     },
     {
