@@ -1,0 +1,19 @@
+#contact-text {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.icons-container {
+    margin-top: 2rem;
+}
+
+.icons-container i {
+    margin: 1rem;
+}
+
+@media(max-width: 600px) {
+    #contact-text {
+        width: 90%;
+    }
+}

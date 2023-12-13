@@ -1,11 +1,12 @@
 #introduction {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15rem;
 }
 
 .text-wrapper {
     max-width: 30%;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
   }
 
 @media (max-width: 600px) {
