@@ -55,7 +55,7 @@ const ProjectDisplay = () => {
                     </div>
                     <div id="displayed-project" key={PROJECTS[displayedIndex].id}>
                         <img className="anim-fade-in" src={PROJECTS[displayedIndex].imgSrc} alt="a picture of my project"></img>
-                        <div>
+                        <div id="project-text">
                             <h3 className="anim-fade-in">{PROJECTS[displayedIndex].name}</h3>
                             <p className="anim-fade-in anim-delay-short">{PROJECTS[displayedIndex].description}</p>
                             <div className="techstack-icons anim-fade-in anim-delay-medium">

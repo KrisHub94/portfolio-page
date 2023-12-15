@@ -8,6 +8,10 @@
     box-shadow: 0 0 50px 15px rgb(83, 83, 83);
 }
 
+/* #project-text {
+    width: auto;
+} */
+
 .section-container {
     display: flex;
     gap: 2rem;
@@ -66,6 +70,7 @@
 img {
     max-width: 600px;
     max-height: 400px;
+    margin: auto;
 }
 
 #github-link i {
@@ -94,5 +99,15 @@ img {
     .section-container {
         height: max-content;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    #displayed-project {
+        flex-wrap: wrap;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none;
     }
 }
