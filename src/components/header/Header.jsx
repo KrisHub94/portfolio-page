@@ -18,7 +18,7 @@ const Header = () => {
                         <span>FULL STACK SOFTWARE DEVELOPER</span>
                     </div>
                     <div className="menu-icon" onClick={() => toggleShowNavbar()}>
-                        <MenuIcon />
+                        <MenuIcon showNavBar={showNavBar} />
                     </div>
                     <div className={`nav-elements ${showNavBar?'visible':'hidden'}`}>
                         <ul>

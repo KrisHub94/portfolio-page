@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin: 1rem;
+    margin: 8rem 1rem auto 1rem;
     gap: .5rem;
 }
 
@@ -61,11 +61,13 @@
 .selected {
     background-color: gray;
     box-shadow: 0 0 40px 15px white;
+    color: black;
 }
 
 img {
     max-width: 600px;
     max-height: 400px;
+    margin: auto;
 }
 
 #github-link i {
@@ -94,5 +96,20 @@ img {
     .section-container {
         height: max-content;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    #displayed-project {
+        flex-wrap: wrap;
+    }
+
+    #display-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none;
     }
 }
