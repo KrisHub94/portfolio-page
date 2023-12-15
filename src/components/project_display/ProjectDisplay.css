@@ -96,6 +96,7 @@ img {
     .section-container {
         height: max-content;
         justify-content: center;
+        padding-bottom: 1rem;
     }
 }
 
