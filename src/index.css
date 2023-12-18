@@ -40,7 +40,9 @@ p {
 
 button {
   background-color: rgb(83, 83, 83);
+  color: white;
   cursor: pointer;
+  border-color: gray rgb(66, 65, 65) rgb(66, 65, 65) gray;
 }
 
 button:hover {
